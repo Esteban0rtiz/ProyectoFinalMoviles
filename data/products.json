@@ -1,0 +1,74 @@
+{
+    "products": [
+        {   
+            "id": 1,
+            "name": "Camiseta Diseño Dragon Ball",
+            "description": "camiseta con un diseño anime",
+            "precio": 20.75,
+            "image": "https://tipanguanocomercial.com/wp-content/uploads/2021/09/Shirts-Dragon-ball-z-front.jpg"
+        },
+        {
+            "id": 2,
+            "name": "Pantalon Jean lee",
+            "description": "pantalon de un color azul",
+            "precio": 25.35,
+            "image": "https://lee.com.ec/wp-content/uploads/Jeans-Clasico-Pepper-1-2.jpeg"
+        },
+        {
+            "id": 3,
+            "name": "Pantalon marca Black",
+            "description": "pantalon de un color negro",
+            "precio": 24.59,
+            "image": "https://www.larazawestern.com/wp-content/uploads/ArtherA200-scaled.jpg"
+        },
+        {
+            "id": 4,
+            "name": "gorra LA",
+            "description": "gorra de baseball",
+            "precio": 15.99,
+            "image": "https://m.media-amazon.com/images/I/61UyFEGq8oL._AC_SL1000_.jpg"
+        },
+        {
+            "id": 5,
+            "name": "Chaqueta Cuero",
+            "description": "Chaqueta comoda y abrigada",
+            "precio": 35.99,
+            "image": "https://www.cueroecuador.com/wp-content/uploads/2020/05/Chaqueta-Maverick-Cuero-Negro.jpg"
+        },
+        {
+            "id": 6,
+            "name": "Calentador Adidas",
+            "description": "Pantalon muy funcional para el frio",
+            "precio": 20.99,
+            "image": "https://assets.adidas.com/images/w_940,f_auto,q_auto/2e75242eaffe444c863bae7900773669_9366/HL9345_21_model.jpg"
+        },
+        {
+            "id": 7,
+            "name": "Chompa Nike",
+            "description": "Chompa muy comoda de usar ",
+            "precio": 30.99,
+            "image": "https://assets.adidas.com/images/w_940,f_auto,q_auto/7b0aa972347b47528824ad1a00b083e7_9366/H34687_01_laydown.jpg"
+        },
+        {
+            "id": 8,
+            "name": "Zapatos Air Jordan",
+            "description": "Zapatos casuales muy comodos",
+            "precio": 60.55,
+            "image": "https://i.pinimg.com/236x/6a/8f/a2/6a8fa2e15d2e4b231574cc423c9519bf.jpg"
+        },
+        {
+            "id": 9,
+            "name": "Zapatos Adidas Edicion Especial",
+            "description": "Zapatos muy raros y especiales",
+            "precio": 299.99,
+            "image": "https://assets.adidas.com/images/w_1880,f_auto,q_auto/05811f4d74fb4a058b27ae9700ad92a4_9366/H06423_01_standard.jpg"
+        },
+        {
+            "id": 10,
+            "name": "Camiseta Diseño Evangelion",
+            "description": "camiseta con un diseño anime",
+            "precio": 20.39,
+            "image": "https://i0.wp.com/tutiendashoka.com/wp-content/uploads/2022/01/camiseta-anime-evangelion-rei2-blanco.jpg?resize=300%2C300&ssl=1"
+        }
+    ]
+}

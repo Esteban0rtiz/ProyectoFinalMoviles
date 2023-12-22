@@ -1,20 +1,46 @@
-import { StatusBar } from 'expo-status-bar';
-import { StyleSheet, Text, View } from 'react-native';
+import React, { useState } from 'react';
+import { NavigationContainer } from '@react-navigation/native';
+import { createStackNavigator } from '@react-navigation/stack';
+import { createBottomTabNavigator } from '@react-navigation/bottom-tabs';
+import HomeScreen from './screens/HomeScreen';
+import CartScreen from './screens/CartScreen';
+import AuthScreen from './screens/AuthScreen';
 
-export default function App() {
+const Stack = createStackNavigator();
+const Tab = createBottomTabNavigator();
+
+const HomeStack = () => (
+  <Stack.Navigator>
+    <Stack.Screen name="HomeScreen" component={HomeScreen} />
+  </Stack.Navigator>
+);
+
+const App = () => {
+  const [user, setUser] = useState(null);
+  const [cartItems, setCartItems] = useState([]);
+
   return (
-    <View style={styles.container}>
-      <Text>Open up App.js to start working on your app!</Text>
-      <StatusBar style="auto" />
-    </View>
+    <NavigationContainer>
+      {user ? (
+        <Tab.Navigator>
+          <Tab.Screen name="Products" component={HomeStack} />
+          <Tab.Screen
+            name="Cart"
+            component={CartScreen}
+            initialParams={{ products: cartItems }}
+          />
+          {/* Agrega más pestañas según sea necesario */}
+        </Tab.Navigator>
+      ) : (
+        <Stack.Navigator initialRouteName="Auth">
+          <Stack.Screen name="Auth">
+            {(props) => <AuthScreen {...props} setUser={setUser} />}
+          </Stack.Screen>
+        </Stack.Navigator>
+      )}
+    </NavigationContainer>
   );
-}
+};
 
-const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    backgroundColor: '#fff',
-    alignItems: 'center',
-    justifyContent: 'center',
-  },
-});
+export default App;
+

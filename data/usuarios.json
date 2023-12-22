@@ -1,0 +1,19 @@
+{
+    "usuarios": [
+        {
+            "user": "Danny",
+            "mail": "danny@gmail.com",
+            "password":"Liga2012"
+        },
+        {
+            "user": "David ",
+            "mail": "david@gmail.com",
+            "password":"Liga2012"
+        },
+        {
+            "user": "Esteban",
+            "mail": "esteban@gmail.com",
+            "password":"Liga2012"
+        }
+    ]
+}
